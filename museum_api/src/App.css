@@ -83,6 +83,11 @@ body {
   cursor: pointer;
 }
 
+.sign-up-form {
+  /* background-color: rgb(123, 123, 155);
+  color: white; */
+}
+
 .greeting {
   font-weight: 200;
 }

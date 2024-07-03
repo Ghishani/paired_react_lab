@@ -51,11 +51,11 @@ const SignUp = ({ users, setUsers, setCurrentUser }) => {
     return (
         <>
         <h2>Sign Up</h2>
-        <form  onSubmit={handleSubmit}>
-            <input type='text' name='name' placeholder='Enter Full Name' value={name} onChange={(e) => setName(e.target.value)}/>
-            <input type='text' name='email-address' placeholder='Enter Email Address' value={email} onChange={(e) => setEmail(e.target.value)}/>
-            <input type='password' name='password' placeholder='Create Password' value={password} onChange={(e) => setPassword(e.target.value)}/>
-            <input type='password' name='confirmPassword' placeholder='Confirm Password' value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)}/>
+        <form onSubmit={handleSubmit}>
+            <input className="sign-up-form" type='text' name='name' placeholder='Enter Full Name' value={name} onChange={(e) => setName(e.target.value)}/>
+            <input className="sign-up-form" type='text' name='email-address' placeholder='Enter Email Address' value={email} onChange={(e) => setEmail(e.target.value)}/>
+            <input className="sign-up-form" type='password' name='password' placeholder='Create Password' value={password} onChange={(e) => setPassword(e.target.value)}/>
+            <input className="sign-up-form" type='password' name='confirmPassword' placeholder='Confirm Password' value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)}/>
 
             <button className="sign-up-button">Sign Up!</button>
         </form>
