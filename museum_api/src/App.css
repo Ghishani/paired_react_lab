@@ -2,10 +2,10 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+  text-align: top;
 }
 
-.logo {
+/* .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
@@ -16,7 +16,7 @@
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
-}
+} */
 
 @keyframes logo-spin {
   from {
@@ -39,4 +39,50 @@
 
 .read-the-docs {
   color: #888;
+}
+
+/* NAVIGATION CSS */
+nav {
+  background-color: #61dafbaa ;
+  overflow: hidden;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10;
+}
+
+nav ul li {
+  float: right;
+}
+
+nav ul li a {
+  
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  
+}
+
+nav ul li a:hover {
+  background-color: #ffefef;
+}
+
+body {
+  background-color: rgb(197, 226, 247);
+}
+
+/* SIGN UP BUTTON */
+.sign-up-button {
+  background-color: rgb(230, 230, 246);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.greeting {
+  font-weight: 200;
 }

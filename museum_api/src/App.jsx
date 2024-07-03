@@ -1,4 +1,5 @@
 import './App.css'
+import React, { useState } from "react";
 import { createBrowserRouter, RouterProvider} from 'react-router-dom';
 import Navigation from './assets/Components/Navigation';
 import MuseumList from './assets/Containers/MuseumList';
@@ -7,6 +8,8 @@ import SignUp from './assets/Components/SignUp';
 import AboutUs from './assets/Components/AboutUs';
 
 function App() {
+  const [users, setUsers] = useState([]);
+  const [currentUser, setCurrentUser] = useState(null);
 
   const router = createBrowserRouter(
     [
@@ -20,7 +23,7 @@ function App() {
           },
           {
             path: "/sign-up",
-            element: <SignUp />
+            element:  <SignUp users={users} setUsers={setUsers} setCurrentUser={setCurrentUser}/>
           },
           {
             path: "/about-us",
@@ -33,11 +36,23 @@ function App() {
 
   return (
     <>
+
+      <div className="greeting">
+      {currentUser ? (
+        <h3>Hello, {currentUser.name}!</h3>
+      ) : (
+       <></>
+      )}
+    </div>
+
       <h1>The Metropolitan Museum of Art Collection</h1>
       <MuseumList />
       <RouterProvider router={router} />
+
+      
+
     </>
-  )
-}
+  );
+};
 
 export default App;

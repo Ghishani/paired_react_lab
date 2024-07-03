@@ -34,9 +34,7 @@ Promise.all(allPromises)
         fetchMuseumObject()
     }, []);
 
-    useEffect(() => {
-        allArtNames()
-    }, [])
+  
 
     return(
         <>
