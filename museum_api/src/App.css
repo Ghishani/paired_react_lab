@@ -91,3 +91,10 @@ body {
 .greeting {
   font-weight: 200;
 }
+
+#image_section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+
+}
